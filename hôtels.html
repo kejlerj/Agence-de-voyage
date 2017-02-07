@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr">  <!-- Demande d'indication de la part du W3C -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/principal.css" rel="stylesheet">
+    <link href="css/listeHôtels.css" rel="stylesheet">
+
+
+    <link rel="stylesheet/less" type="text/css" href="css/principal.less" />
+
+    
+    <title>Hôtels</title>
+</head>
+
+<body>
+    
+     <div class="container-fluid">
+
+        <header class='row'>
+            <div class='col-md-12'>
+                <div id='entête'>
+                    <p class="imageGauche"><img src="images/entete/logo.png"  alt="logo de l'agence" width="120" /></p>
+                    <h1>Excellence Voyages</h1>
+                    <h3>Voyages prestigieux pour clients prestigieux</h3>
+                </div>
+            </div>
+        </header>  
+
+        <div class='row menu'>
+
+                <nav class="navbar">
+                        <div class="navbar-header">
+                            <button type = "button" class = "navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                               <span class = "sr-only">Toggle navigation</span>
+                               <span class = "icon-bar"></span>
+                               <span class = "icon-bar"></span>
+                               <span class = "icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="accueil.html">Accueil</a></li>
+                                <li><a href="reservation.html">Réservation</a></li>
+                                <li><a href="choixCircuits.html">Circuits</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">More <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="apropos.html">A propos</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+
+            </div>
+      </div>
+		
+        <div class='row separateur'>
+        </div>
+		
+			<div class="page">
+
+			<h2>Nos Chambres</h2>
+			<hr>
+
+            <form class="form-inline">
+
+              <div class="form-group"> 
+                <input class="form-control center" id="dateDepart" name="date" placeholder="Départ" type="text"/>
+              </div>
+              <div class="form-group"> 
+                <input class="form-control center" id="dateArrivee" name="date" placeholder="Arrivée" type="text"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" min="0" id="number-inputAdultes" placeholder="Nombre d'adultes">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="number" min="0" id="number-inputEnfants" placeholder="Nombre d'enfants">
+              </div>
+
+              <button type="submit" class="btn bouton">Rechercher</button>
+            </form>
+
+			<div class="liste">
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/suiteJapon.html" class="thumbnail">
+						      <img src="images/hotels/japon.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Suite Deluxe Japon</h4>
+							<p> Superbement situées en angle, les Suites Deluxe disposent de larges baies panoramiques tout le long des murs du séjour et 
+							de la salle à ...</p>
+							<nav>
+								<ul>
+									<li>  Lits: 1 Lit(s) King Size </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $1117</h2>
+							<a class="btn bouton" href="hotels/suiteJapon.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/tahiti.html" class="thumbnail">
+						      <img src="images/hotels/tahiti.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Hôtel Intercontinental Tahiti Resort 4</h4>
+							<p> Situé à Tahiti, île mythique de la Polynésie française, dans l'Archipel de la Société, l'hôtel Intercontinental Tahiti Resort est un véritable refuge de ...</p>
+							<nav>
+								<ul>
+									<li>  Lits: 1 Lit(s) Queen </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites3.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $1150</h2>
+							<a class="btn bouton" href="hotels/tahiti.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/Suite.html" class="thumbnail">
+						      <img src="images/hotels/suite2.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Suite</h4>
+							<p> Cette élégante Suite Junior décorée dans le style des années 1940 et 1950 offre un grand espace ouvert avec une large salle de bain entourée ...</p>
+							<nav>
+								<ul>
+									<li>  Taille: 64 m2  </li>
+									<li>  Lits: 1 Lit(s) Double(s), 1 Lit(s) King Size  </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites2.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $1150</h2>
+							<a class="btn bouton" href="hotels/Suite.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/cambridge.html" class="thumbnail">
+						      <img src="images/hotels/cambridge.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Cambridge Suites Hotel</h4>
+							<p> Dotée d'un spacieux séjour, de 2 télévisions, d'un petit réfrigérateur et d'un four à micro-ondes. Les appels locaux sont gratuits. Du café et du ...</p>
+							<nav>
+								<ul>
+									<li> Taille: 180 m2 </li>
+									<li> Lits: 1 Lit(s) Queen  </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites3.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $1200</h2>
+							<a class="btn bouton" href="hotels/cambridge.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/brasil.html" class="thumbnail">
+						      <img src="images/hotels/bresil1.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Brasil Suite</h4>
+							<p> Situé à 12 km de l'aéroport Dumont et à 28 km de celui de Galéao, l'hôtel Fasano de Rio fait face à la légendaire plage d'Ipanéma. Il offre l'avantage ...</p>
+							<nav>
+								<ul>
+									<li> Lits: 1 Lit(s) King Size  </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites4.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $1300</h2>
+							<a class="btn bouton" href="hotels/brasil.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/ambassador.html" class="thumbnail">
+						      <img src="images/hotels/ambassador.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Ambassador Suite</h4>
+							<p> 75 m2 - Vue : Ville - Localisation : 3ème au 9ème étage - Baignoire et douche dans toutes les chambres ...</p>
+							<nav>
+								<ul>
+									<li>  Lits: 1 Lit(s) King Size </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites2.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $3110</h2>
+							<a class="btn bouton" href="hotels/ambassador.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="proposition">
+						<hr>
+						<div class="col-xs-6 col-md-4">
+							<a href="hotels/royal.html" class="thumbnail">
+						      <img src="images/hotels/palazzo.jpg" alt="photo hôtel">
+						    </a>
+						</div>
+						<div class="description col-md-5">
+							<h4>Suite Royal</h4>
+							<p> 233 m2 - Vue : Vue sur les jardins privés - Localisation : Étage noble du Palazzo Della Gherardesca - Baignoire et douche dans toutes les ...</p>
+							<nav>
+								<ul>
+									<li>  Lits: 1 Lit(s) King Size </li>
+								</ul>
+							</nav>
+							<hr>
+							<div class="options">
+								<img src="images/hotels/sprites.png" alt="options disponibles" class="img-responsive">
+							</div>
+						</div>
+						<div class="prix col-md-3 text-center">
+							<p>à partir de</p>
+							<h2> $15000</h2>
+							<a class="btn bouton" href="hotels/royal.html" role="button">Plus d'infos</a>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+
+
+		</div>
+		
+		
+        <footer class='row'> 
+
+			<div class='row separateur'>
+			</div>        
+			<div class='row separateur'>
+			</div>
+             <div class='col-md-12 contact'>
+                 <div id="réseauxSociaux">
+                     <div class="imageGauche facebook"><a href="http://facebook.fr"></a></div>
+                     <div class="imageGauche twitter"><a href="http://twitter.fr"></a></div>
+                     <div class="imageGauche google"><a href="https://plus.google.com/?hl=fr"></a></div>
+                     <div class="imageGauche pinterest"><a href="https://fr.pinterest.com/"></a></div>
+                </div>
+            </div>  
+        </footer>
+
+
+
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Partie concernant le DatePicker -->
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+
+</body>
+</html>
+
+
+

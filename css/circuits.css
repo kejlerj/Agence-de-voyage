@@ -1,0 +1,230 @@
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+    background-color : #A6C1E8;
+ }
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+
+h2{
+	font-family: Baskerville;
+	color : #2b689c;
+	font-size : 30px;
+}
+
+hr{
+	width : 100%;
+	height: 8px;
+	border-top : 0.5px solid #8cd2cd;
+}
+
+h4{
+
+	color : #1C3353;
+	font-size : 1vw;
+}
+
+p{
+	font-family : Georgia;
+	color : #305589;
+	font-size : 1.1vw;
+}
+
+.titre{
+	text-align : center;
+	background-color : white;
+	height: 60px;
+}
+
+.titre h2{
+	font-family: Baskerville;
+	font-style: italic;
+	padding-top : 14px;
+}
+
+.separateur{
+	height: 40px;
+	background-color: #A6C1E8;
+}
+
+
+
+/*Partie concernant la page*/
+
+/*Ligne nom du circuit*/
+
+.titreCircuit h2{
+	margin-top: 8px;
+}
+
+.ligne_verticaleTitre{
+	border-left:1px solid #8cd2cd;	
+	width:5px;
+	height: 3vw;
+}
+
+.texte{
+	margin-top : -60px;
+}
+
+/*Cadre réservation*/
+
+.cadre{
+	padding-top : 3%;
+	padding-bottom: 2%;
+	padding-left : 5%;
+	margin-left : 5%;
+	border: 1px solid #8cd2cd;
+	border-radius: 5px;
+}
+
+.cadre p{
+	font-size : 15px;
+}
+
+.ligne_verticalePremiere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;
+    height:7vw;
+}
+
+.ligne_verticaleDerniere{
+	float: left;
+	margin-right: 5%;
+	margin-left: -5%;
+    width:5px;
+    border-left:1px solid #8cd2cd;	
+    height:4vw;
+}
+
+/*Reste de la page*/
+
+.page{
+	background-color : white !important;
+	width : 65%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top : 3%;
+	padding-bottom : 3%;
+	padding-left : 3%;
+	padding-right : 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.diapo{
+	width : 65%;
+	height : 300px;
+}
+
+.struct{
+	margin-top : 40px;
+	margin-bottom: 120px;
+}
+.slides{
+	background-size : cover;
+}
+
+.miniature{
+	width : 50px;
+	height : 30px;
+}
+
+.miniatures{
+	margin-left : 12%;
+}
+
+.bouton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width : 75%;
+	height : 35px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: #8cd2cd; 
+    color: white; 
+	margin-top : 5%;
+	margin-bottom : 5%;
+}
+
+.bouton:hover {
+    background-color: #2b689c;
+    color: white;
+}
+
+
+.section p{
+	margin-bottom: 5px;
+	font-size : 1.1vw;
+	color : #305589;
+}
+
+.section h4{
+	color : #305589;
+	font-size : 1.1vw;
+	font-weight: bold;
+}
+
+
+
+/*Responsive Design*/
+
+    @media (max-width: 980px) {
+
+    	.diapo{
+    		display: none;
+    	}
+
+		.miniature{
+			width : 400px;
+			height : 240px;
+		}
+
+		.ligne_verticaleTitre{
+			display: none;
+		}
+
+		.cadre{
+			padding: 60px;
+			margin: 0;
+			text-align: center;
+			width: 90%;
+			margin-left: 5%;
+		}
+
+		.ligne_verticalePremiere{
+			display: none;
+		}
+
+		.ligne_verticaleDerniere{
+			display: none;
+		}
+
+		hr{
+			margin-left: 10%;
+		}
+
+    }
+
+     @media screen and (max-width: 767px) {
+
+     	.miniature{
+			width : 200px;
+			height : 120px;
+		}	
+
+     }

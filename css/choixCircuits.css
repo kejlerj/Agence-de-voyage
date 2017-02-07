@@ -1,0 +1,316 @@
+/*La carte*/
+
+embed{
+	width: 800px;
+	height: 500px;
+}
+
+.carte{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	top: 2%;
+}
+
+.carte h2{
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 800px;
+	font-family: "Century Gothic",sans-serif;	
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 5px;
+	font-weight: 100;
+	text-shadow: -2px 2px 4px #999;
+	color: #323232;
+}
+
+#world{
+	margin-top: -24.7px;
+}
+
+
+/*Menu du sprite*/
+
+.spriteMenu{
+	margin-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+.showImg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/choixCircuits/sprites.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.choix li ul {
+  display: none; /*Ne faire apparaitre qu'après un hover*/
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/*Second niveau de liens*/
+
+.choix li ul li {
+  border: 1px solid white;
+  background-color: #AAADEC;
+  display: block;
+  width: 200px;
+  height: 43px;
+  line-height: 35px;
+  padding: 5px;
+  position: relative;
+}
+
+.choix li:hover ul {	/*faire apparaitre le bloc*/
+  display: block;
+}
+
+.choix a {
+  display: block;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+/*  Pied  */
+
+.choix li.pied {
+  background-position: -103px -1px;
+}
+
+.choix li.pied:hover {
+  background-position: -103px -52px;
+}
+
+
+/* Vélo */
+.choix li.velo {
+  background-position: -1px -1px;
+}
+
+.choix li.velo:hover {
+  background-position: -1px -52px;
+}
+
+/*  Auto  */
+.choix li.auto {
+  background-position: -154px -1px;
+}
+
+.choix li.auto:hover {
+  background-position: -154px -52px;
+}
+
+
+/*  Avion */
+
+.choix li.avion {
+  background-position: -52px -1px;
+}
+
+.choix li.avion:hover {
+  background-position: -52px -52px;
+}
+
+
+/*Les vignettes descriptives*/
+
+.éléments{
+	margin-top: 2em;
+}
+
+.présentationPremière{
+	width: 42em;
+	height: auto;
+	color:#2B6CA3;
+	font-family: "Century Gothic",sans-serif;
+}
+
+.présentation{
+	margin-top: 2em;
+	width: 42em;
+	height: auto;
+	color:#2B6CA3;
+	font-family: "Century Gothic",sans-serif;
+}
+
+.centrer{
+	width: 84.5em;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.premiere{
+	margin-top: -1em;
+}
+
+.derniere{
+	margin-bottom: 8em;
+}
+
+
+
+.vignette{
+	width: 25%;
+	border: 9px solid white;
+	float: right;
+}
+
+
+.texte{
+	float: left;
+	width: 75%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding-left: 15px;
+	padding-bottom: 1px;
+}
+
+
+.texte h4{
+	font-size: 16px;
+}
+
+.texte h2{
+	font-size: 23px;
+	text-shadow: -2px 2px 4px #999;
+}
+
+
+.btn-circle {
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 40px;
+  background-color: #A6C1E8;
+  border: solid 3px white;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: -12px;
+  color: white;
+}
+
+.btn-circle:hover{
+	cursor: pointer;
+	background-color: white;
+	transition: background-color 100ms linear;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/*Arrière plan de la page*/
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/*bas de page*/
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+
+	/*Responsive design*/
+
+
+    @media (min-width: 1301px){
+    	html{overflow-x: hidden;}
+    }
+
+
+    @media (max-width: 1300px) and (min-width: 1200px) {
+    	html{overflow-x: hidden;}
+    	#bgvid { display: none; }
+    	body { background-image: url(../images/choixCircuits/bgCircuits.png);
+				background-attachment:fixed;
+				background-size:cover;}   /*Supprime le fond vidéo selon la taille de l'écran*/
+    }
+
+    @media (max-width: 1200px){
+    	.gauche{margin-left: 0;}
+    	.présentationPremière{margin-top: 2em; margin-left: 20em;}
+    	.présentation{margin-top: 2em; margin-left: 20em;}
+    	#bgvid { display: none; }
+    	html{overflow-x: hidden;}
+    	body { background-image: url(../images/choixCircuits/bgCircuits.png);
+			   background-attachment:fixed;
+			   background-size:cover;}   /*Supprime le fond vidéo selon la taille de l'écran*/
+    }
+	
+	@media(max-width: 1000px){
+		.btn-circle{display: none;}
+	}
+
+    @media(max-width: 980px){
+    	.btn-circle{display: none;}
+    	.gauche{margin-left: 0;}
+    	.présentationPremière{margin-top: 2em; margin-left: 10em;}
+    	.présentation{margin-top: 0em; margin-left: 10em;}
+    }
+
+    @media screen and (max-width: 767px){
+
+    	.carte h2{
+    		display: none;
+    	}
+
+    	.carte{
+    		margin-top: 3em;
+    	}
+
+		embed{
+			width: 600px;
+			height: 300px;
+		}
+
+    	.présentationPremière{margin-left: 0.5em;}
+    	.présentation{margin-left: 0.5em;}
+
+    }
+
+
+    @media screen and (max-width: 530px){
+
+		embed{
+			width: 320px;
+			height: 300px;
+		}
+
+		.texte h4{
+			font-size : 2vw;
+		}
+
+		.texte h2{
+			font-size : 2.15vw;
+		}
+
+    	.présentationPremière{margin-left:0; width: 40%; height: 40%;}
+    	.présentation{margin-left:0; width: 40%; height: 40%;}
+    	.vignette{display: none;}
+
+	}

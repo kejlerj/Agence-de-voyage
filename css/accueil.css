@@ -1,0 +1,173 @@
+html{
+	overflow-x: hidden;
+}
+
+.accueil{
+    background-image: url(../images/accueil/accueil.jpg);
+	background-size:100% 100%;
+    background-repeat: no-repeat;
+ }
+
+    @media (min-width: 1080px) {
+      .accueil {
+        min-height: 54em;      }
+    }
+
+.annonce{
+	background-color: white;
+	color:black;
+	text-align: center;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 	padding: 5em;
+ 	margin-top: 5em;
+}
+
+.annonce h2{
+	font-family: "Century Gothic",sans-serif;	
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 5px;
+	font-weight: 100;
+	text-shadow: -2px 2px 4px #999;
+	color: #323232;
+	padding-bottom: 15px;
+}
+
+.annonce h5{
+	font-family: "Century Gothic",sans-serif;	
+	color: #B0B0B0;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+.annonce h4{
+	font-family: "Century Gothic",sans-serif;	
+	color: #323232;
+	padding-bottom: 15px;
+}
+
+.CoupCoeur {
+  box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
+  border-radius: 50%;
+  background: url(../images/accueil/italie1.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 250px;
+  height: 230px;
+  display: inline-block;
+  cursor:  pointer;
+}
+
+.CoupCoeur a{
+	display: block;
+	width: 250px;		/*Mettre la même taille que la div coup de coeur*/
+  	height: 230px;
+}
+
+
+.slide{
+	background-color: #A6C1E8;	
+	min-height: 20em;
+}
+
+
+.separateur{
+	height: 15px;
+	background-color: #1C3353;	
+}
+
+
+.carousel-inner > .item {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-inner h3{
+	color: #000000;
+	margin-top:-15em;
+
+}
+
+.carousel-inner p{
+	color: #000000;
+	font-style: italic;
+}
+
+.slide2 h3{
+	color: #FFFFFF;
+	margin-top:-15em;
+
+}
+
+.slide2 p{
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.slide1{
+	background: url(../images/accueil/Philipinnes.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.slide2{
+	background: url(../images/accueil/Hawaii.jpeg) no-repeat center center;
+	background-size: cover;
+}
+
+.slide3{
+	background: url(../images/accueil/K2.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.slide4{
+	background: url(../images/accueil/Paris.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.slide5{
+	background: url(../images/accueil/Egypte.jpeg) no-repeat center center;
+	background-size: cover;
+}
+
+
+/*Responsive Design*/
+
+	@media (max-width: 1200px){
+		.annonce{
+			margin-bottom: 15px;		
+			
+
+			
+		}	
+	}
+
+
+	@media screen and (max-width: 760px){
+		.CoupCoeur{
+			width: 130px;
+			height: 130px;
+		}
+
+		.CoupCoeur a{
+			width: 130px;
+			height: 130px;	
+		}
+
+		.annonce h2{
+			font-size: 1em;
+			letter-spacing: 1px;
+		}
+
+		.annonce{
+			margin-top: -20px;
+		}
+
+		.accueil{
+	        background-image: none;
+	        background-color : #A6C1E8;
+		}
+
+	}
+

@@ -1,0 +1,248 @@
+/*Le fond correspondant à chaque continent*/
+
+.contenantAmNord{
+    background-image: url(../images/destinations/AmNord/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenantAmSud{
+    background-image: url(../images/destinations/AmSud/fond.jpeg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenantEurope{
+    background-image: url(../images/destinations/Europe/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenantAfrique{
+    background-image: url(../images/destinations/Afrique/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenantAsie{
+    background-image: url(../images/destinations/Asie/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.contenantOcéanie{
+    background-image: url(../images/destinations/Océanie/fond.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*La page de destinations*/
+
+.page{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+
+.partieGauche{
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+
+.partieDroite{
+  border: 5px solid rgba(255, 255, 255, 0.8);
+  padding: 2px;
+}
+
+.bande{
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 2em;
+
+}
+
+.bande h2{
+  font-family: "Century Gothic",sans-serif; 
+  font-size: 23px;
+  text-shadow: -2px 2px 4px #999;
+  color: #323232;
+  padding-bottom: 15px;
+}
+
+
+.retour{
+  float: right;
+  margin-top: 1.5%;
+}
+
+.retour a{
+  text-decoration: none;
+  color: #323232;
+}
+
+
+/*Seconde partie de la page*/
+
+.destinations{
+  margin-top: 50px;
+}
+
+.image{
+  box-shadow: 4px -4px 3px 0px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 280px;
+  height: 260px;
+  display: inline-block;
+  cursor:  pointer;
+  z-index: 1000;
+  margin-left: 10px;
+}
+
+.image a{
+  display: block;
+  width: 280px;   
+  height: 260px;
+}
+
+.description{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  margin-bottom: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
+  min-height: 611px;
+}
+
+.description h2{
+  font-family: "Century Gothic",sans-serif; 
+  font-size: 24px;
+  text-shadow: -2px 2px 4px #999;
+  color:#2B6CA3;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.description p{
+  font-family: "Century Gothic",sans-serif; 
+  font-size: 18px;
+  color:#2B6CA3;
+}
+
+.bouton{
+  background-color: #2B6CA3;
+  color: white;
+  width: 70px;
+  border-radius: 70%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  position: absolute;
+  bottom: 0;
+}
+
+.bouton:hover{
+  color: white;
+  background-color: #1C3353;
+  transition: 0.5s;
+}
+
+
+/*Responsive Design*/
+
+	@media(min-width:1400px){
+		.image{
+			margin-left: 30px;
+		}
+	}
+
+    @media (max-width: 1400px) {
+
+      .page{
+          margin-bottom: 30px;
+          width: 85%;
+      }
+
+      html{
+        overflow-x: hidden;
+      }
+
+  }
+
+
+    @media (max-width: 1000px) {
+
+      .description{
+          min-height: 800px;
+      }
+
+      .image{
+         width: 200px;
+        height: 180px;       
+      }
+
+      .bouton{
+        margin-left: 20%;
+      }
+
+    }
+
+     @media screen and (max-width: 800px) {
+
+      .container-fluid{
+        background-image: none;
+        background-color : #A6C1E8;
+      }
+
+      .choix{
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+      }
+
+      .description{
+        min-height: 550px;
+      }
+
+      .bouton{
+        margin-left:0;
+        width: 90%;
+        border-radius: 0;
+      }
+
+      .image{
+
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+     }  
+
+     @media screen and (max-width: 420px) {
+      .description{
+        min-height: 650px;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .image{
+        display: none;
+      }
+
+      .banniere{
+        display: none;
+      }
+
+      .retour{
+       float: none;
+      }
+
+     }

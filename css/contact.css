@@ -1,0 +1,132 @@
+.contenant{
+    background-image: url(../images/more/contact1.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  
+}  
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+form button{
+  float: right;
+  background-color: rgb(203,52,101);
+  color: white;
+}
+
+form button:hover{
+  background-color: rgb(211,86,126);
+  box-shadow: 2px 2px 5px ;
+}
+
+textarea{
+  max-height: 120px;
+  min-height: 35px;
+  max-width: 100%;
+}
+
+.titre h2{
+  font-size: 25px; 
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 10px ;
+}
+
+hr{
+  width: 100%;
+  border-top : 2px solid white;
+  margin-top: -2px;
+}
+
+.réseauxPage{
+  margin-top: 15%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top: 2px dashed white;
+  border-bottom: 2px dashed white;
+}
+
+.centerRéseaux{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social{
+  margin-right: 10px;
+}
+
+
+/*Responsive Design*/
+
+
+    @media (max-width: 1400px) {
+    
+      .centerRéseaux{
+        width: 80%;
+      }
+
+      #telephone{
+        width: 90%;
+      }
+
+      .page{
+          margin-bottom: 30px;
+      }
+
+    }
+	
+	@media(max-width:1080px){
+		.page{
+			padding-bottom: 30%;
+		}
+		
+		.titre{
+			padding-bottom: 30%;
+		}
+	}
+	
+    @media (max-width: 990px) {
+	
+      .réseauxPage{
+        display: none;
+      }
+
+    }
+
+     @media screen and (max-width: 767px) {
+
+        .PartieGauche{
+          float: none;
+          margin-bottom: 20px;
+        }
+
+        #telephone{
+          width: 180px;
+        }
+
+        .page{
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 30px;
+        }
+
+        .formulaire{
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+     }  

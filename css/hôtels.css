@@ -1,0 +1,287 @@
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+    background-color : #A6C1E8;
+ }
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+	
+
+.separateur{
+	height: 40px;
+	background-color: #A6C1E8;
+}
+
+.texte{
+	margin-top : -60px;
+}
+
+
+h2{
+	font-family: Baskerville;
+	color : #2b689c;
+	font-size : 30px;
+	margin: 0;
+}
+
+hr{
+	margin-left: 0;
+	width : 70%;
+	height: 8px;
+	border-top : 0.5px solid #8cd2cd;
+}
+
+h4{
+	color : #1C3353;
+	font-size : 1vw;
+}
+
+p{
+	font-family : Georgia;
+	color : #305589;
+	font-size : 15px;
+}
+
+
+/*Ligne nom de la chambre*/
+
+.titreChambre h2{
+	margin-top: 8px;
+}
+
+.ligne_verticaleTitre{
+	border-left:1px solid #8cd2cd;	
+	width:5px;
+	height: 3vw;
+}
+
+.page{
+	background-color : white !important;
+	width : 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top : 3%;
+	padding-bottom : 3%;
+	padding-left : 3%;
+	padding-right : 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*formulaire et cadre de prix*/
+
+
+.cadre{
+	padding-top : 3%;
+	padding-bottom: 2%;
+	padding-left : 5%;
+	margin-left : 5%;
+	border: 1px solid #8cd2cd;
+	border-radius: 5px;
+}
+
+.ligne_verticalePremiere{
+	float: left;
+	margin-left: -30px;
+    width:5px;
+    border-left:1px solid #8cd2cd;
+    height:6vw;
+}
+
+.bouton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	width : 75%;
+	height : 35px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: #8cd2cd; 
+    color: white; 
+	margin-top : 5%;
+	margin-bottom : 5%;
+}
+
+.bouton:hover {
+    background-color: #2b689c;
+    color: white;
+}
+
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color : #1C3353;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color : #1C3353;
+   opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color : #1C3353;
+   opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color : #1C3353;
+}
+
+.form-control{
+	border: solid 1.5px #8cd2cd;
+	border-radius: 2px;
+	box-shadow: none;
+	margin: 0;
+    font-family:"Lucida Sans Unicode";
+}
+
+.form-group{
+	margin-bottom: 0;
+}
+
+form{
+	margin-left: -30px;
+	margin-bottom: 30px;
+}
+
+.form-control:hover{
+	border: solid 1.5px #8cd2cd;
+	box-shadow: none;
+}
+
+.form-control:focus{
+	border: solid 1.5px #8cd2cd;
+	box-shadow: none;
+}
+
+
+/*Diapo*/
+
+.diapo{
+	width : 65%;
+	height : 400px;
+}
+
+.struct{
+	margin-top : 40px;
+	margin-bottom: 40px;
+}
+.slides{
+	background-size : cover;
+}
+
+.miniature{
+	width : 50px;
+	height : 30px;
+}
+
+.miniatures{
+	margin-left : 12%;
+}
+
+
+/*Reste de la page*/
+
+.section p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size : 1.1vw;
+	color : #1C3353;
+}
+
+.section h4{
+	color : #1C3353;
+	font-size : 1.2vw;
+	font-weight: bold;
+}
+
+.caracSection{
+	margin-right: 3%;
+}
+
+.heureSection{
+	margin-left: -5%;
+}
+
+.premiereSection{
+	margin-left: 7%;
+}
+
+.confort{
+	margin-left: -1%;
+}
+
+
+/*Responsive Design*/
+
+    @media (max-width: 980px) {
+
+    	.diapo{
+    		display: none;
+    	}
+
+		.miniature{
+			width : 400px;
+			height : 240px;
+		}
+
+		.ligne_verticaleTitre{
+			display: none;
+		}
+
+		.cadre{
+			padding: 60px;
+			margin: 0;
+			text-align: center;
+			width: 90%;
+			margin-left: 5%;
+		}
+
+		.ligne_verticalePremiere{
+			display: none;
+		}
+
+		form{
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.section{
+			margin-left: 10%;
+		}
+
+		hr{
+			margin-left: 10%;
+		}
+
+		.confort img{
+			width: 100%;
+		}
+
+    }
+
+     @media screen and (max-width: 767px) {
+
+     	.miniature{
+			width : 200px;
+			height : 120px;
+		}	
+
+		.page{
+			width: 90%;
+		}
+
+		.section p{
+			font-size: 10px;
+		}
+
+		.section h4{
+			font-size: 12px;
+		}
+
+     }

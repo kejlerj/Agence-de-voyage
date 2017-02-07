@@ -1,0 +1,52 @@
+html{
+  overflow-x: hidden;
+}
+
+body{
+	background-color : #A6C1E8;
+}
+
+.choix{
+
+	background-color: transparent;
+	color:black;
+	text-align: center;
+ 	padding: 2em;
+ 	margin-top: 3em;
+}
+
+.choix a{
+	margin-top: 50px;
+}
+
+
+#Hotel, #Circuit{
+  box-shadow: 4px -4px 3px 0px rgba(156,150,156,1);
+  border-radius: 50%;
+  width: 250px;
+  height: 230px;
+  display: inline-block;
+}
+
+#Hotel {
+  background: url(../images/reservation/hotelL.jpg) no-repeat;
+  background-size: auto 100%;
+}
+
+#Circuit {
+  background: url(../images/reservation/Avion.jpg) no-repeat;
+  background-size: auto 100%;
+}
+
+
+@media (min-width: 980px){
+
+  footer{   /*Pour que le footer se positionne en bas de page*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
+
+

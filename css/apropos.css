@@ -1,0 +1,194 @@
+.contenant{
+    background-image: url(../images/more/propos.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+    @media (min-width: 1080px) {
+      .page {
+        min-height: 54em;      }
+    }
+
+
+hr{
+  width: 100%;
+  border-top : 3.5px solid white;
+}
+
+.references{
+  border-left : 3px dashed white;
+  padding-top: 8%;
+  padding-bottom: 7%;
+  margin-bottom: 100px;
+}
+
+.blocAvis{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.blocInt{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 55px;
+  margin-right: 25px;
+  min-height: 150px;
+}
+
+.bloc{
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 55px;
+  width: 28%;
+  min-height: 150px;
+}
+
+.commentaires h3{
+
+  font-style: normal;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(34, 66, 124);
+  font-family: Arial;
+
+}
+
+.blocAvis h3 {
+    font-family: "Century Gothic",sans-serif; 
+    text-shadow: -2px 2px 4px;
+    letter-spacing: 5px;
+    color: rgb(0, 51, 102);
+}
+
+
+
+.commentaires h4 {
+  font-family: "Century Gothic",sans-serif; 
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+
+.italic{
+  font-style: italic;
+}
+
+
+/*Responsive Design*/
+
+
+    @media (max-width: 1400px) {
+
+      .page{
+          margin-bottom: 30px;
+      }
+
+      .bloc{
+        width: 26%;
+        min-height: 200px;
+      }
+
+      .blocInt{
+        min-height: 200px;
+      }
+
+      #map{
+          height: 200px;
+          width: 200px;
+      }
+
+      .carte{
+        min-height: 520px;
+      }
+
+      .references{
+        min-height: 520px;
+      }
+
+    }
+	
+	@media(max-width: 1100px){
+		.bloc{
+			width: 25%;
+		}
+	}
+
+    @media (max-width: 990px) {
+
+      .bloc{
+        width: 100%;
+        min-height: 200px;
+      }
+
+      .carte{
+        float: none;
+        min-height: inherit;
+		padding: 30px;
+      }
+
+      .references{
+        border: none;
+        min-height: inherit;
+      }
+
+      #map{
+        height: 100px;
+        width: 500px;
+		margin: 0 auto;
+      }
+
+      .references{
+          width: 300px;
+		  margin: 0 auto;
+        }
+
+    }
+
+     @media screen and (max-width: 767px) {
+
+		.references{
+			width: 100%;
+		}
+	 
+        .carte{
+          display: none;
+        }
+
+        hr{
+          display: none;
+        }
+
+        .blocAvis{
+          float: none;
+          width: 100%;
+        }
+
+        .bloc, .blocInt{
+          float:none;
+          width: 100%;
+          min-height: inherit;
+          height: 200px;
+        }
+
+        .page{
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 30px;
+        }
+
+        .contenant{
+          background-image: none;
+          background-color : #A6C1E8;
+        }
+		
+
+
+     }  
